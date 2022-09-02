@@ -3,7 +3,7 @@ const express = require('express')
 const cors = require('cors')
 const app = express()
 app.use(cors())
-// app.use(express.static('build'))
+app.use(express.static('build'))
 // const Note = require('./models/note')
 
 let notes = [
